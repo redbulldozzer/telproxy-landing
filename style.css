@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --flag-bg: url("./assets/flagind.avif");
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  background-image: var(--flag-bg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.top-bar {
+  width: 100%;
+  max-width: 100%;
+  min-height: 98px;
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  background: #513cf6;
+  overflow: hidden;
+}
+
+.brand {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.shield {
+  width: 62px;
+  height: 68px;
+  flex: 0 0 62px;
+  overflow: visible;
+}
+
+.shield path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+.shield text {
+  fill: #ffffff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  dominant-baseline: middle;
+}
+
+.brand-text {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.landing {
+  position: relative;
+  min-height: calc(100svh - 98px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.telegram-card {
+  position: relative;
+  width: 100%;
+  max-width: 558px;
+  margin: 0 auto;
+  padding: 25px 25px 20px;
+  border-radius: 24px;
+  background: #513cf6;
+  text-align: center;
+}
+
+.telegram-card h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.subline {
+  margin: 14px 0 0;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  margin: 27px 0 0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #090909;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow:
+    0 8px 0 rgba(42, 25, 130, 0.72),
+    0 12px 15px rgba(26, 16, 91, 0.34);
+}
+
+.note {
+  margin: 49px 0 0;
+  color: #c7bfe7;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.22;
+}
+
+.chat {
+  margin: 27px 0 0;
+  color: #d8d0f0;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+@media (max-width: 594px) {
+  .top-bar {
+    min-height: 16.5vw;
+    padding: 2.5vw 3vw;
+  }
+
+  .brand {
+    gap: 2.35vw;
+  }
+
+  .shield {
+    width: 10.44vw;
+    height: 11.45vw;
+    flex-basis: 10.44vw;
+  }
+
+  .shield path {
+    stroke-width: 0.67vw;
+  }
+
+
+  .landing {
+    min-height: calc(100svh - 16.5vw);
+    padding: 3.03vw;
+  }
+
+  .telegram-card {
+    padding: 4.21vw 4.21vw 3.36vw;
+    border-radius: 4.04vw;
+  }
+
+  .telegram-card h1 {
+    font-size: 5.05vw;
+  }
+
+  .subline {
+    margin-top: 2.36vw;
+    font-size: 3.54vw;
+  }
+
+  .cta-button {
+    min-height: 16.84vw;
+    margin-top: 4.55vw;
+    font-size: 4.04vw;
+    box-shadow:
+      0 1.35vw 0 rgba(42, 25, 130, 0.72),
+      0 2.02vw 2.53vw rgba(26, 16, 91, 0.34);
+  }
+
+  .note {
+    margin-top: 8.25vw;
+    font-size: 3.37vw;
+  }
+
+  .chat {
+    margin-top: 4.55vw;
+    font-size: 3.7vw;
+  }
+}
